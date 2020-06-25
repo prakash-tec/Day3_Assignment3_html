@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Html Form</title>
+</head>
+<body>
+    <form>
+        <fieldset style="width:300px">
+            <legend>Input Text Field Validation</legend>
+            <table>
+                <tr>
+                    <td>First Name*</td>
+                    <td><input type="text" id=" txtfname" placeholder="First Name" required /></td>
+                </tr>
+                <tr>
+                    <td>Last Name*</td>
+                    <td><input type="text" id="txtlname" placeholder="Last Name"  required /></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="width:300px">
+            <legend>Email & URL Validation</legend>
+            <table >
+                <tr>
+                    <td>Email*</td>
+                    <td><input type="email" id=" txtemail" placeholder="e.g.prakash@example.com"  required /></td>
+                </tr>
+                <tr>
+                    <td>Website*</td>
+                    <td><input type="url" id="txtlurl" placeholder="e.g.https://www.google.com"  required /></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="width:300px">
+            <legend>Mobile or Phone Number Validation</legend>
+            <table >
+                <tr>
+                    <td>Mobile*</td>
+                    <td><input type="tel" id="txtphno" placeholder="Please enter 10 digit phone number" required /></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="width:300px">
+            <legend>Drop Down Box Validation</legend>
+            <table >
+                <tr>
+                    <td>Contry </td>
+                    <td><input type="text" id="" list="source" placeholder="India"/></td>
+                    <datalist id="source">
+                        <option value="India"></option>
+                        <option value="America"></option>
+                        <option value="Afghanistan"></option>
+                        <option value="Algeria"></option>
+                        <option value="Argentina"></option>
+                        <option value="Australia"></option>
+                        <option value="Bharin"></option>
+                        <option value="Bangladesh"></option>
+                        <option value="Brazil"></option>
+                        <option value="Canada"></option>
+                        <option value="China"></option>
+                        <option value="Egypt"></option>
+                    </datalist>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="width:300px">
+            <legend>Number Validation With Specific Range </legend>
+            <table >
+                <tr>
+                    <td>Post code*</td>
+                    <td><input type="text" name="pin" pattern="[0-9]{4}" maxlength="6" required /></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="width:300px">
+            <legend>Textarea Validation</legend>
+            <table >
+                <tr>
+                    <td>Address*</td>
+                    <td><textarea id="story" name="story" rows="3" cols="23" required></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="width:300px">
+            <legend>Check Box and Radio Button Validation</legend>
+            <table >
+                <tr>
+                    <td>Agree to t&c*</td>
+                    <td><input type="checkbox" id="chagr" required /></td>
+                </tr>
+                <tr>
+                    <td>Genral*</td>
+                    <td><input type="radio" name="male">Male <input type="radio" name="female">Female
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="width:300px">
+            <legend>Password Validation Using Partten</legend>
+            <table >
+                <tr>
+                    <td>Password*</td>
+                    <td><input type="password" id=" txtpsword" required /></td>
+                </tr>
+            </table>
+         </fieldset>
+    </form>
+
+</body>
+</html>
